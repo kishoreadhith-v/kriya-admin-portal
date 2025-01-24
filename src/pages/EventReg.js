@@ -17,6 +17,7 @@ const EventReg = () => {
       loading: "Loading event statistics...",
       success: (res) => {
         setEventStats(res.data?.eventWiseCount);
+        console.log(res.data?.eventWiseCount);
         return "Event statistics loaded";
       },
       error: (err) => {
@@ -30,7 +31,10 @@ const EventReg = () => {
     <Layout title={"Event Registrations"}>
       <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 w-full justify-around items-center pb-12">
         <div className="">Sort by</div>
-        <button className={`px-6 py-2 rounded-full ${eventID ? "bg-[#3c3c3c] text-white" : "bg-[#eaeaea] text-[#303030]"} border-2 border-[#303030]`}
+        <button
+          className={`px-6 py-2 rounded-full ${
+            eventID ? "bg-[#3c3c3c] text-white" : "bg-[#eaeaea] text-[#303030]"
+          } border-2 border-[#303030]`}
           onClick={() => {
             setEventID(true);
             setRegistrations(false);
@@ -43,7 +47,12 @@ const EventReg = () => {
         >
           Event ID
         </button>
-        <button className={`px-6 py-2 rounded-full ${registrations ? "bg-[#3c3c3c] text-white" : "bg-[#eaeaea] text-[#303030]"} border-2 border-[#303030]`}
+        <button
+          className={`px-6 py-2 rounded-full ${
+            registrations
+              ? "bg-[#3c3c3c] text-white"
+              : "bg-[#eaeaea] text-[#303030]"
+          } border-2 border-[#303030]`}
           onClick={() => {
             setEventID(false);
             setRegistrations(true);
@@ -56,14 +65,23 @@ const EventReg = () => {
         >
           Registrations
         </button>
-        <button className={`px-6 py-2 rounded-full ${category ? "bg-[#3c3c3c] text-white" : "bg-[#eaeaea] text-[#303030]"} border-2 border-[#303030]`}
+        <button
+          className={`px-6 py-2 rounded-full ${
+            category ? "bg-[#3c3c3c] text-white" : "bg-[#eaeaea] text-[#303030]"
+          } border-2 border-[#303030]`}
           onClick={() => {
             setEventID(false);
             setRegistrations(false);
             setCategory(true);
 
             let temp = eventStats;
-            temp.sort((a, b) => events.find((ev) => a._id === ev.eventId).category.localeCompare(events.find((ev) => b._id === ev.eventId).category));
+            temp.sort((a, b) =>
+              events
+                .find((ev) => a._id === ev.eventId)
+                ?.category.localeCompare(
+                  events.find((ev) => b._id === ev.eventId)?.category
+                )
+            );
             setEventStats(temp);
           }}
         >
@@ -83,27 +101,37 @@ const EventReg = () => {
         </div>
         <div className="border-b border-2 border-[#303030]"></div>
 
-        {eventStats?.map((e, index) => (
-          <div>
-            <div className="flex flex-row items-center">
-              <div className="text-xl mr-6 lg:mr-4 w-[5%]">{index + 1}</div>
-              <button className="w-1/2 flex flex-col text-left"
-                onClick={() => {
-                  navigate(`/event-details/${e._id}`);
-                }}
-              >
-                <p className="text-xs">{e._id} - {events.find((ev) => e._id === ev.eventId).category}</p>
-                <p className="">
-                  {events.find((ev) => e._id === ev.eventId).eventName}
-                </p>
-              </button>
-              <div className="text-3xl lg:text-4xl text-center font-semibold w-[15%]">{e.count}</div>
-              <div className="text-3xl lg:text-4xl text-center font-semibold w-[15%]">{e.psgCount}</div>
-              <div className="text-3xl lg:text-4xl text-center font-semibold w-[15%]">{e.count - e.psgCount}</div>
+        {eventStats?.map((e, index) => {
+          const event = events.find((ev) => e._id === ev.eventId);
+          return (
+            <div key={e._id}>
+              <div className="flex flex-row items-center">
+                <div className="text-xl mr-6 lg:mr-4 w-[5%]">{index + 1}</div>
+                <button
+                  className="w-1/2 flex flex-col text-left"
+                  onClick={() => {
+                    navigate(`/event-details/${e._id}`);
+                  }}
+                >
+                  <p className="text-xs">
+                    {e._id} - {event?.category}
+                  </p>
+                  <p className="">{event?.eventName}</p>
+                </button>
+                <div className="text-3xl lg:text-4xl text-center font-semibold w-[15%]">
+                  {e.count}
+                </div>
+                <div className="text-3xl lg:text-4xl text-center font-semibold w-[15%]">
+                  {e.psgCount}
+                </div>
+                <div className="text-3xl lg:text-4xl text-center font-semibold w-[15%]">
+                  {e.count - e.psgCount}
+                </div>
+              </div>
+              <div className="w-full h-[1px] bg-gray-500 my-2"></div>
             </div>
-            <div className="w-full h-[1px] bg-gray-500 my-2"></div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </Layout>
   );
