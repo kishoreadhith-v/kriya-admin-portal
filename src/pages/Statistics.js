@@ -38,7 +38,8 @@ const Statistics = () => {
       <Component title="Total Paper Registrations" value={stats?.totalPaperCount} />
       <Component title="PSG Paper Registrations" value={stats?.psgPaperCount} />
       <Component title="Non-PSG Paper Registrations" value={stats?.totalPaperCount - stats?.psgPaperCount} />
-      <Component title="Accommodation Count" value={stats?.accommodationCount} />
+      <Component title="Accommodation Count Boys" value={stats?.accommodationCount} />
+      <Component title="Accomodation Count Girls" value={stats?.accomdationCountFemale} />
       <Component title="Total Referrals" value={stats?.referralCount} />
     </Layout>
   );

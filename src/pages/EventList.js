@@ -1,214 +1,185 @@
 const events = [
   {
-    "eventName": "Aquajet",
-    "category": "Gold",
-    "eventId": "EVNT0001"
+    eventName: "Runway Rush",
+    category: "Fashion and Textile",
+    eventId: "EVNT05",
   },
   {
-    "eventName": "Asimo Bot ",
-    "category": "Core Engineering",
-    "eventId": "EVNT0002"
+    eventName: "Kriya Open Quiz",
+    category: "Gold",
+    eventId: "EVNT10",
   },
   {
-    "eventName": "Auto Minds mastery Challenge: Engine Craft Edition",
-    "category": "Core Engineering",
-    "eventId": "EVNT0003"
+    eventName: "Aero Glider",
+    category: "Gold",
+    eventId: "EVNT22",
   },
   {
-    "eventName": "Auto-Mania",
-    "category": "Management",
-    "eventId": "EVNT0004"
+    eventName: "WhizZone",
+    category: "Science",
+    eventId: "EVNT29",
   },
   {
-    "eventName": "Bounty Hxnt",
-    "category": "Coding",
-    "eventId": "EVNT0005"
+    eventName: "TaskOps",
+    category: "Gold",
+    eventId: "EVNT14",
   },
   {
-    "eventName": "Chromaquest ",
-    "category": "Amuse",
-    "eventId": "EVNT0006"
+    eventName: "CodeStorm",
+    category: "Coding",
+    eventId: "EVNT21",
   },
   {
-    "eventName": "Civil showdown",
-    "category": "Kriyative",
-    "eventId": "EVNT0007"
+    eventName: "RoboSumo",
+    category: "Gold",
+    eventId: "EVNT08",
   },
   {
-    "eventName": "Civilphilia",
-    "category": "Core Engineering",
-    "eventId": "EVNT0008"
+    eventName: "Quizzy Crushy: Auto Edition",
+    category: "Quiz",
+    eventId: "EVNT13",
   },
   {
-    "eventName": "Codebuster",
-    "category": "Coding",
-    "eventId": "EVNT0009"
+    eventName: "SpeedDrifters 2.0",
+    category: "Gold",
+    eventId: "EVNT19",
   },
   {
-    "eventName": "Critical Thinker",
-    "category": "Management",
-    "eventId": "EVNT0010"
+    eventName: "Codopoly",
+    category: "Coding",
+    eventId: "EVNT20",
   },
   {
-    "eventName": "Dimensions in Design ",
-    "category": "Kriyative",
-    "eventId": "EVNT0011"
+    eventName: "Astral Arena",
+    category: "Science",
+    eventId: "EVNT81",
   },
   {
-    "eventName": "DrapeTales : Where Every Creator Tells A Tale",
-    "category": "Kriyative",
-    "eventId": "EVNT0012"
+    eventName: "COUTURE CHRONICLE",
+    category: "Fashion and Textile",
+    eventId: "EVNT15",
   },
   {
-    "eventName": "Dynamix",
-    "category": "Management",
-    "eventId": "EVNT0013"
+    eventName: "Auto Arena",
+    category: "Bot",
+    eventId: "EVNT32",
   },
   {
-    "eventName": "Eco couture Canvas - Sustainable Creation",
-    "category": "Management",
-    "eventId": "EVNT0014"
+    eventName: "Forensicist",
+    category: "Technology",
+    eventId: "EVNT18",
   },
   {
-    "eventName": "Etheral Cosmos",
-    "category": "Amuse",
-    "eventId": "EVNT0015"
+    eventName: "TRY AND TRIUMPH",
+    category: "Technology",
+    eventId: "EVNT24",
   },
   {
-    "eventName": "Forensicist",
-    "category": "Kriyative",
-    "eventId": "EVNT0016"
+    eventName: "Levitas",
+    category: "Core Engineering",
+    eventId: "EVNT87",
   },
   {
-    "eventName": "Futuristic Techo",
-    "category": "Amuse",
-    "eventId": "EVNT0017"
+    eventName: "CRITICAL THINKER",
+    category: "Core Engineering",
+    eventId: "EVNT86",
   },
   {
-    "eventName": "InnovateX",
-    "category": "Brainiac",
-    "eventId": "EVNT0018"
+    eventName: "NUMERIX",
+    category: "Science",
+    eventId: "EVNT04",
   },
   {
-    "eventName": "Innovation Forge ",
-    "category": "Kriyative",
-    "eventId": "EVNT0019"
+    eventName: "HackQuest",
+    category: "Coding",
+    eventId: "EVNT07",
   },
   {
-    "eventName": "Kriya Open Quiz",
-    "category": "Gold",
-    "eventId": "EVNT0020"
+    eventName: "Innovator's Quest",
+    category: "Core Engineering",
+    eventId: "EVNT23",
   },
   {
-    "eventName": "Load Glider",
-    "category": "Management",
-    "eventId": "EVNT0021"
+    eventName: "Civilphilia",
+    category: "Core Engineering",
+    eventId: "EVNT26",
   },
   {
-    "eventName": "Locked & Loaded ",
-    "category": "Amuse",
-    "eventId": "EVNT0022"
+    eventName: "TechTrails",
+    category: "Coding",
+    eventId: "EVNT28",
   },
   {
-    "eventName": "Mechmaniacs",
-    "category": "Brainiac",
-    "eventId": "EVNT0023"
+    eventName: "TeeStory: T-Shirt Design Challenge",
+    category: "Fashion and Textile",
+    eventId: "EVNT84",
   },
   {
-    "eventName": "Mid Day Madness",
-    "category": "Management",
-    "eventId": "EVNT0024"
+    eventName: "Binary×Forge",
+    category: "Coding",
+    eventId: "EVNT12",
   },
   {
-    "eventName": "Mystery Quest",
-    "category": "Amuse",
-    "eventId": "EVNT0025"
+    eventName: "Circuityzer",
+    category: "Science",
+    eventId: "EVNT27",
   },
   {
-    "eventName": "NexTech - \"Shaping tomorrow, today\"",
-    "category": "Gold",
-    "eventId": "EVNT0026"
+    eventName: "CodeHub",
+    category: "Coding",
+    eventId: "EVNT03",
   },
   {
-    "eventName": "Nowornever Nexus",
-    "category": "Management",
-    "eventId": "EVNT0027"
+    eventName: "CIVIL SHOWDOWN",
+    category: "Quiz",
+    eventId: "EVNT25",
   },
   {
-    "eventName": "Pixel To Prototype",
-    "category": "Coding",
-    "eventId": "EVNT0028"
+    eventName: "INNOVATION FORUM",
+    category: "Fashion and Textile",
+    eventId: "EVNT09",
   },
   {
-    "eventName": "Quotient",
-    "category": "Brainiac",
-    "eventId": "EVNT0029"
+    eventName: "Elegance to the Road: Innovate Assemble Drive",
+    category: "Core Engineering",
+    eventId: "EVNT17",
   },
   {
-    "eventName": "RC Grand Prix",
-    "category": "Gold",
-    "eventId": "EVNT0030"
+    eventName: "Mindventure",
+    category: "Quiz",
+    eventId: "EVNT31",
   },
   {
-    "eventName": "Robot Grand Prix",
-    "category": "Gold",
-    "eventId": "EVNT0031"
+    eventName: "Fashion Faceoff: The Ultimate Fashion Quiz",
+    category: "Fashion and Textile",
+    eventId: "EVNT83",
   },
   {
-    "eventName": "Robowars",
-    "category": "Core Engineering",
-    "eventId": "EVNT0032"
+    eventName: "Auction to Action",
+    category: "Core Engineering",
+    eventId: "EVNT11",
   },
   {
-    "eventName": "Sci - Fiesta ",
-    "category": "Kriyative",
-    "eventId": "EVNT0033"
+    eventName: "Fortune Flick",
+    category: "Technology",
+    eventId: "EVNT16",
   },
   {
-    "eventName": "Speed Drifters",
-    "category": "Gold",
-    "eventId": "EVNT0034"
+    eventName: "ROBO RALLY",
+    category: "Gold",
+    eventId: "EVNT82",
   },
   {
-    "eventName": "SPO - (R) - TI - FY",
-    "category": "Amuse",
-    "eventId": "EVNT0035"
+    eventName: "Solar implant",
+    category: "Core Engineering",
+    eventId: "EVNT85",
   },
   {
-    "eventName": "Tech - O - Mate",
-    "category": "Core Engineering",
-    "eventId": "EVNT0036"
+    eventName: "TechWhiz",
+    category: "Core Engineering",
+    eventId: "EVNT30",
   },
-  {
-    "eventName": "Tech Quest",
-    "category": "Coding",
-    "eventId": "EVNT0037"
-  },
-  {
-    "eventName": "Tech Spark",
-    "category": "Brainiac",
-    "eventId": "EVNT0038"
-  },
-  {
-    "eventName": "Techvisions",
-    "category": "Brainiac",
-    "eventId": "EVNT0039"
-  },
-  {
-    "eventName": "Tradtitonal Games Galore",
-    "category": "Kriyative",
-    "eventId": "EVNT0040"
-  },
-  {
-    "eventName": "Try and triumph",
-    "category": "Brainiac",
-    "eventId": "EVNT0041"
-  },
-  {
-    "eventName": "Witty Mindz",
-    "category": "Amuse",
-    "eventId": "EVNT0042"
-  }
 ];
+
 
 export default events;

@@ -1,82 +1,83 @@
 const workshops = [
   {
-    "wid": "WKSP0011",
-    "workName": "Sensor Interface and Integration",
-    "alteredFee": 699,
-    "maxCount": "70"
+    wid: "WKSP03",
+    alteredFee: 400,
+    workName: "Crack The Code",
+    maxCount: 60,
   },
   {
-    "wid": "WKSP0001",
-    "workName": "Immersive Reality - AR",
-    "alteredFee": 299,
-    "maxCount": "50"
+    wid: "WKSP05",
+    alteredFee: 399,
+    workName: "Design and Analsyis of EV Traction Motor Systems",
+    maxCount: 70,
   },
   {
-    "wid": "WKSP0005",
-    "workName": "Spatial AI in Mobile Robotics",
-    "alteredFee": 500,
-    "maxCount": "80"
+    wid: "WKSP10",
+    alteredFee: 640,
+    workName: "Introduction to GenAI and various GenAI models",
+    maxCount: 50,
   },
   {
-    "wid": "WKSP0002",
-    "workName": "Digital Forensics",
-    "alteredFee": 400,
-    "maxCount": "80"
+    wid: "WKSP08",
+    alteredFee: 439,
+    workName: "MedXplore",
+    maxCount: 50,
   },
   {
-    "wid": "WKSP0009",
-    "workName": "Bitflow Fiesta",
-    "alteredFee": 501,
-    "maxCount": "60"
+    wid: "WKSP11",
+    alteredFee: 440,
+    workName: "Touch Tech Unleashed: Mastering Displays in Hands-On Sessions",
+    maxCount: 40,
   },
   {
-    "wid": "WKSP0007",
-    "workName": "IOT for Mechanical Applications",
-    "alteredFee": 399,
-    "maxCount": "50"
+    wid: "WKSP06",
+    alteredFee: 520,
+    workName: "Cloud - Edge Systems in Industrial IoT Applications",
+    maxCount: 60,
   },
   {
-    "wid": "WKSP0004",
-    "workName": "Data Analytics using R",
-    "alteredFee": 349,
-    "maxCount": "50"
+    wid: "WKSP09",
+    alteredFee: 360,
+    workName: "Neurons to Networks: Unleashing the Power of Brain-Inspired AI",
+    maxCount: 90,
   },
   {
-    "wid": "WKSP0003",
-    "workName": "5G Wireless Technologies for various applications",
-    "alteredFee": 250,
-    "maxCount": "50"
+    wid: "WKSP04",
+    alteredFee: 680,
+    workName: "Sensor Interface and Integration",
+    maxCount: 50,
   },
   {
-    "wid": "WKSP0006",
-    "workName": "Fashion Communication",
-    "alteredFee": 499,
-    "maxCount": "80"
+    wid: "WKSP07",
+    alteredFee: 240,
+    workName: "Laser Material Processing",
+    maxCount: 30,
   },
   {
-    "wid": "WKSP0008",
-    "workName": "Orionize",
-    "alteredFee": 350,
-    "maxCount": "100"
+    wid: "WKSP01",
+    alteredFee: 560,
+    workName: "ARC - AI-driven Resilient Cybersecurity",
+    maxCount: 50,
   },
   {
-    "wid": "WKSP0010",
-    "workName": "Physical Simulation of Manufacturing procedures and Welding Simulations",
-    "alteredFee": 300,
-    "maxCount": "52"
+    wid: "WKSP02",
+    alteredFee: 480,
+    workName: "Edge AI Based Embedded System",
+    maxCount: 30,
   },
   {
-    "wid": "WKSP0012",
-    "workName": "Transformational Manufacturing - 4.0",
-    "alteredFee": 401,
-    "maxCount": "150"
+    wid: "WKSP12",
+    alteredFee: 479,
+    workName: "Ins and Outs of Gen AI",
+    maxCount: 70,
   },
   {
-    "wid": "WKSP0013",
-    "workName": "AR and VR Workshop",
-    "alteredFee": 550,
-    "maxCount": "75"
-  }
-]
+    wid: "WKSP13",
+    alteredFee: 800,
+    workName: "Drone Lab : Build; Fly; Innovate",
+    maxCount: 60,
+  },
+];
+
 
 export default workshops;
