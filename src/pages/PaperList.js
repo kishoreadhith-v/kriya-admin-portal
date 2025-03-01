@@ -1,21 +1,22 @@
 const papers = [
   {
-    "ppid": "PRPN0001",
-    "paperName": "TECHNORATION",
+    ppid: "PRPN04",
+    paperName: "அறிந்தமிழ் கூடல்",
   },
   {
-    "ppid": "PRPN0002",
-    "paperName": "GREEN GALA",
+    ppid: "PRPN03",
+    paperName: "Technoration",
   },
   {
-    "ppid": "PRPN0003",
-    "paperName": "CYBERGUARD",
+    ppid: "PRPN01",
+    paperName: "ADVANCE METHOD OF REFRIGERATION AND AIR CONDITIONING",
   },
   {
-    "ppid": "PRPN0004",
-    "paperName": "அறிந்தமிழ் கூடல்",
-  }
-  
-]
+    ppid: "PRPN05",
+    paperName:
+      "Plasma physics, quantum entanglement and thin films applications.",
+  },
+];
+
 
 export default papers;
