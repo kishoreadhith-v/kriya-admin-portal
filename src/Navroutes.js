@@ -54,7 +54,7 @@ const NavRoutes = [
   //   href: "/edit-website",
   //   element: <EditWebsite />,
   // },
-  
+
   {
     title: "Event Registrations",
     icon: <IoTrophyOutline />,
@@ -73,7 +73,7 @@ const NavRoutes = [
     href: "/paper-reg",
     element: <PaperReg />,
   },
-  
+
   {
     title: "Graphs",
     icon: <GrGraphQl />,
@@ -81,10 +81,10 @@ const NavRoutes = [
     element: <Graph />,
   },
   //{
-    //title: "Send Mail",
-    //icon: <GoMail />,
-    //href: "/send-mail",
-    //element: <SendMail />,
+  //title: "Send Mail",
+  //icon: <GoMail />,
+  //href: "/send-mail",
+  //element: <SendMail />,
   //},
   {
     title: "Department Wise",
@@ -98,6 +98,12 @@ const NavRoutes = [
     href: "/certificate-info",
     element: <CertificateInfo />,
   },
+  {
+    title: "Referal Stats",
+    icon: <HiOutlineSpeakerphone />,
+    href: "/referral-leaderboard",
+    element: <ReferralLeaderboard />
+  }
 ];
 
 export default NavRoutes;
