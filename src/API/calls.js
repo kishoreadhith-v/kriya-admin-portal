@@ -13,6 +13,8 @@ export const fetchStatistics = () => axios.get(`${BASE_URL}/statistics`, {});
 
 export const fetchCollegeStats = () =>
   axios.get(`${BASE_URL}/statistics/college-stats`, {});
+export const fetchhowDidTheyGetThere = () =>
+  axios.get(`${BASE_URL}/statistics/howdidtheeygethere`, {});
 
 export const fetchEventStats = () =>
   axios.get(`${BASE_URL}/statistics/event-stats`, {});

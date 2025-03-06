@@ -23,6 +23,7 @@ import Statistics from "./pages/Statistics";
 import CollegeUsers from "./pages/CollegeUsers";
 import Graph from "./pages/Graph";
 import SendMail from "./pages/SendMail";
+import DiscoverySource from "./pages/DiscoverySource";
 import DepartmentWise from "./pages/DepartmentWise";
 import AccommodationDetails from "./pages/AccommodationDetails";
 import AccommodationEdit from "./pages/AccommodationEdit";
@@ -103,7 +104,13 @@ const NavRoutes = [
     icon: <HiOutlineSpeakerphone />,
     href: "/referral-leaderboard",
     element: <ReferralLeaderboard />
-  }
+  },
+  {
+    title: "How did you get to know?",
+    icon: <BsBuildings />,
+    href: "/knowledge-about-kriya",
+    element: <DiscoverySource />,
+  },
 ];
 
 export default NavRoutes;
