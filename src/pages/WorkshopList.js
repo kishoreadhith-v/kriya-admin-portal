@@ -51,7 +51,7 @@ const workshops = [
     wid: "WKSP07",
     alteredFee: 240,
     workName: "Laser Material Processing",
-    maxCount: 30,
+    maxCount: 45,
   },
   {
     wid: "WKSP01",
